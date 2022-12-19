@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Chivo Mono';
+    src: URL('assets/ChivoMono-VariableFont_wght.ttf') format('truetype');
+  }
+
+body {
+    background-image: url('assets/fons.jpeg');
+    font-family: 'Chivo Mono', monospace;;
+}
+
+/*
+body:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}*/
+
+body * {
+    z-index: 10;
+}
+
+.number-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-table table {
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 32%);
+    padding: 12px 12px;
+    font-size: 30px;
+    background: #fffffff0;
+    backdrop-filter: blur(14px);
+}
+
+.number-table table td {
+    text-align: center;
+    border-radius: 7px;
+    padding: 12px 22px;
+    opacity: 0.2;
+    transition: opacity 1s, background-color .6s;
+}
+
+.number-table table td.shown {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #a72846;
+    color: white;
+}
+
+.number-table table td.selected {
+    background-color: green;
+}
+
+.actual-number-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    color: white;
+}
+
+.actual-number-container #actualNumber {
+    padding: 19px 39px;
+    border-radius: 8px;
+    font-size: 150px;
+    min-width: 122px;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+}
+
+.button-group {
+    position: absolute;
+    top: 0;
+}
+
+.artifact {
+    display: none !important;
+    background-color: #a72845db;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    text-shadow: 0 1px 3px #00000078;
+    box-shadow: 0px 0px 5px #000000bd;
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.artifact .icon {
+    margin: 0 8px;
+}
