@@ -1,8 +1,11 @@
-# quinaController
+# Barrejador de números per la quina
 
-## TODOS
-* Full screen -> OK
-* typo -> OK
-* td.onclick = toggleStatus() of number shown -> OK
+## Com s'utilitza?
+
+* Entrar al link [https://arzelcm.github.io/quinaController/](https://arzelcm.github.io/quinaController/)
+* La tecla `Intro` o `Espai` per a barrejar.
+* La tecla `Esborrar` per tornar a començar. 
+
+### TODOs
 * Number search
 * Help button - documentate
